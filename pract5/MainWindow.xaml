@@ -1,0 +1,34 @@
+﻿<Window x:Class="pract5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract5"
+        mc:Ignorable="d" Background="Black"
+        Title="MainWindow" Height="450" Width="444.5">
+    <Grid>
+        <Menu VerticalAlignment="Top" Height="20">
+            <MenuItem Header="Файл" Height="20">
+                <MenuItem Header="Выход из программы" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Справка" Height="20">
+                <MenuItem Header="О программе" Click="Information_Click"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Триада А:" HorizontalAlignment="Left" Height="34" Margin="101,64,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" FontSize="15" Foreground="White"/>
+        <Label Content="Триада В:" HorizontalAlignment="Left" Height="32" Margin="101,114,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" FontSize="15" Foreground="White"/>
+        <Label Content="Триада С:" HorizontalAlignment="Left" Height="34" Margin="101,159,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" FontSize="15" Foreground="White"/>
+        <TextBox x:Name="firstTriadA" HorizontalAlignment="Left" Height="30" Margin="189,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="firstTriadB" HorizontalAlignment="Left" Height="30" Margin="189,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="firstTriadC" HorizontalAlignment="Left" Height="30" Margin="189,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="secondTriadA" HorizontalAlignment="Left" Height="30" Margin="240,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="secondTriadB" HorizontalAlignment="Left" Height="30" Margin="240,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="secondTriadC" HorizontalAlignment="Left" Height="30" Margin="240,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="thirdTriadA" HorizontalAlignment="Left" Height="30" Margin="290,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="thirdTriadB" HorizontalAlignment="Left" Height="30" Margin="290,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="thirdTriadC" HorizontalAlignment="Left" Height="30" Margin="290,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="equal" TextWrapping="Wrap"  Margin="172,217,160,157" IsReadOnly="True" FontSize="14" FontWeight="Bold" TextDecorations="Underline"/>
+        <Button x:Name="CompareNumber" Content="Сравнить триаду А и В" HorizontalAlignment="Center" Margin="0,259,0,0" VerticalAlignment="Top" Width="242" Height="36" FontSize="15" FontWeight="Bold" Click="CompareNumber_Click" Background="Transparent" Foreground="white"/>
+        <Button x:Name="CompareNumber2" Content="Сравнить все триады" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Width="242" Height="36" FontSize="15" FontWeight="Bold" Click="CompareNumber2_Click" Background="Transparent" Foreground="white"/>
+    </Grid>
+</Window>
